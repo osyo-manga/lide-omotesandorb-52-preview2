@@ -1,8 +1,8 @@
 ### 表参道.rb #52
 - - -
 
-### Ruby 2.7.0-preview2 の
-### リリースノートを読もう
+## Ruby 2.7.0-preview2 の
+## リリースノートを読もう
 
 ---
 
@@ -22,12 +22,12 @@
 
 ---
 
-## 今日話すこと
+# 今日話すこと
 
 ---
 
-### Ruby 2.7.0-preview2 の
-### リリースノートを読もう
+## Ruby 2.7.0-preview2 の
+## リリースノートを読もう
 
 ---
 
@@ -216,7 +216,9 @@ end
 
 obj = Bar.new
 p obj.add_1(1) #=> 3
+# Ruby 2.6
 p Foo.instance_method(:add_1).bind(obj).call(1) #=> 2
+# Ruby 2.7
 p Foo.instance_method(:add_1).bind_call(obj, 1) #=> 2
 ```
 
@@ -237,6 +239,7 @@ using Ex
 
 p 42.method(:plus).call(2)
 # => 44
+
 p Numeric.instance_method(:plus).bind_call(3.14, 5)
 # => 8.14
 ```
