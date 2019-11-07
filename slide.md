@@ -44,7 +44,7 @@
 - - -
 
 * パターンマッチの in を1行でかける
-* `case <expr>; in <pattern>; ... end`
+* `<expr> in <pattern>`
 
 ```ruby
 user = { name: "Mami", age: 15 }
